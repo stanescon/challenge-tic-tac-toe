@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #192a32;
+    height: 100vh;
+    overflow: hidden;
+}
+.jogo-da-velha {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    align-items: center;
+    justify-items: center;
+}
+.logo {
+    justify-self: self-start;
+    margin: 0 10px;
+}
+.imagem-logo {
+    height: 30px;
+}
+.x-turn {
+    display: flex;
+    color: #a8bfc9;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    background: #1f3540;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px #0f2129;
+}
+.icon-x {
+    width: 20px;
+    margin-right: 5px ;
+}
+.reset {
+    justify-self: self-end;
+}
+.icon-reset {
+    width: 44px;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #a8bfc9;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px #80939b;
+}
+.botao {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #1f3540;
+    border-radius: 15px;
+    box-shadow: 0px 5px 2px #0f2129;
+}
+.x-you, .empate, .o-cpu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #192a32;
+    margin: 10px;
+    width: 100px;
+    border-radius: 10px;
+    height: 55px;
+    box-shadow: 0px 3px 1px #0f2129;
+}
+.x-you {
+    background: #31c4be;
+}
+.empate {
+    background: #a8bfc9;
+}
+.o-cpu {
+    background: #f1b238;
+}
+.notificacao {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f3540;
+}
+.notificacao p {
+    font-family: 'Karla', sans-serif;
+    color: #FFFFFF;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2rem;
+    color: #31c4be;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.botoes-quit-next button {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0 2px;
+    border-radius: 10px;
+    border: none;
+}
+.botoes-quit-next button:nth-child(1) {
+    background-color: #a8bfc9;
+}
+.botoes-quit-next button:nth-child(2) {
+    background-color: #f1b238;
+}
+.inativo {
+    display: none;
+}
