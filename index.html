@@ -59,16 +59,24 @@
             <img src="./imagens/x.png" class="marca-x inativo">
             <img src="./imagens/o.png" class="marca-o inativo">
         </div>
-        <div class="x-you">
+        <div class="x-you inativo">
             <p>X - (YOU)</p>
+            <p>0</p>
+        </div>
+        <div class="player-x">
+            <p>PLAYER X</p>
             <p>0</p>
         </div>
         <div class="empate">
             <p>TIES</p>
             <p>0</p>
         </div>
-        <div class="o-cpu">
+        <div class="o-cpu inativo">
             <p>O - (CPU)</p>
+            <p>0</p>
+        </div>
+        <div class="player-o">
+            <p>PLAYER O</p>
             <p>0</p>
         </div>
     </div>
@@ -95,6 +103,22 @@
         <div class="botoes-quit-next">
             <button class="vs-cpu">VS CPU</button>
             <button class="multiplayer">MULTIPLAYER</button>
+        </div>
+    </div>
+    <div class="notificacao x-won inativo">
+        <p>PLAYER X WON!</p>
+        <h1>TAKES THE ROUND</h1>
+        <div class="botoes-quit-next">
+            <button class="quit">QUIT</button>
+            <button class="next-x-won">NEXT ROUND</button>
+        </div>
+    </div>
+    <div class="notificacao o-won inativo">
+        <p>PLAYER O WON!</p>
+        <h1>TAKES THE ROUND</h1>
+        <div class="botoes-quit-next">
+            <button class="quit">QUIT</button>
+            <button class="next-o-won">NEXT ROUND</button>
         </div>
     </div>
 <script src="./scrip.js" ></script>    
