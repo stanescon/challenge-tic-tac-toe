@@ -3,11 +3,12 @@ const inicioMultiplayer = document.querySelector('.multiplayer');
 const botoesDoJogo = document.querySelectorAll('.botao');
 const marcadorX = document.querySelectorAll('.marca-x');
 const marcadorO = document.querySelectorAll('.marca-o');
-const multiplayer = true;
+let multiplayer = false;
 let change = true
 
 inicioMultiplayer.onclick = function () {
     document.querySelector('.modo-game').classList.add('inativo');
+    multiplayer = true
 }
 
 for(let i=0; i < botoesDoJogo.length; i++) {
@@ -116,5 +117,25 @@ for(let i=0; i < quit.length; i++){
             }
         }
     }
+
+}
+
+const reset = document.querySelector('.reset')
+
+reset.onclick = function () {
+    for(let i=0; i < botoesDoJogo.length; i++){
+        if(!marcadorX[i].classList.contains('inativo')){
+            marcadorX[i].classList.add('inativo');
+        }
+        if(!marcadorO[i].classList.contains('inativo')){
+            marcadorO[i].classList.add('inativo');
+        }
+    }
+    contadorX = 0;
+    contadorO = 0;
+    document.querySelector('.player-o').innerHTML = '<p>PLAYER O</p><p>0</p>';
+    document.querySelector('.player-x').innerHTML = '<p>PLAYER X</p><p>0</p>';
+    multiplayer = false
+    document.querySelector('.modo-game').classList.remove('inativo');
 
 }
